@@ -1,0 +1,858 @@
+/* instant trade */
+.z-\[900\].\!fixed.bg-card-100.cursor-move.over-fullScreen:has(> div > div[style*="user-select: none"]) {
+  display: none;
+}
+
+.z-\[900\] .bg-card-100 {
+    background: rgba(32,34,38,0.88) !important;
+    /*backdrop-filter: blur(6px);*/
+}
+
+/* token page sidebar warning */
+main.flex .flex.relative.h-full .absolute.top-0.left-0 > .flex.flex-col.min-w-\[320px\].max-w-\[320px\].overflow-x-hidden
+.flex.flex-col.gap-y-12px.p-12px.pt-14px > div > .flex.p-12px.rounded-6px.gap-6px {
+    display: none;
+}
+
+/* card MC text */
+main.w-full > .w-full .g-table-body > div > div[data-index] .bg-bg-100\/95 {
+    background: none !important;
+}
+
+/* card time & CA text */
+main.w-full > .w-full .g-table-body > div > div[data-index]  .text-\[14px\] {
+    font-size: 12.75px !important;
+}
+
+/* card hover */
+main.w-full > .w-full .g-table-body > div > div[data-index] > div > :hover {
+    background: rgba(45,60,50,0.1) !important;
+}
+
+/* mc and volume text */
+main.w-full > .w-full .g-table-body > div > div[data-index] .\!text-\[12px\] {
+    font-size: 13.5px !important;
+}
+
+/* quick buy button */
+main.w-full > .w-full .g-table-body > div > div[data-index] .group\/btn {
+    display: none;
+}
+
+.rem-price-chart {
+    bottom: 10px;
+    right: 8px;
+    height: 50px !important;
+    z-index: 999999 !important;
+}
+
+.bg-bg-200 {
+  background-color: var(--color-bg-100) !important;
+}
+
+/* holders hover */
+.g-table-body .bg-bg-200.hover\:bg-hover-100 .flex.cursor-pointer.hover\:bg-bg-100:hover,
+.g-table-body .bg-bg-100.hover\:bg-hover-100 .flex.cursor-pointer.hover\:bg-bg-100:hover,
+.g-table-body .bg-bg-100.hover\:bg-hover-100:hover,
+.g-table-body .bg-bg-200.hover\:bg-hover-100:hover {
+  background: rgba(50,55,75,0.15) !important;
+}
+
+
+
+
+
+
+/************************************/
+/*              MY SHIT             */
+/************************************/
+
+/******** PULSE ********/
+
+/* pulse tracker button spacing (New, Stretch, Migrated) */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:not(:has([data-live-trades-content="true"])) >
+.relative.bg-backgroundSecondary.cursor-move > .flex.flex-row.h-full > button {
+    padding-right: 32px;
+}
+
+/* hide token button */
+button.absolute.z-50.opacity-0.group-hover\:opacity-100:has(.ri-eye-off-line) {
+  scale: 1.4;
+}
+
+/* blacklist dev button */
+button.absolute.z-50.opacity-0.group-hover\:opacity-100:has(.icon-chefhat-off) {
+  display: none;
+}
+
+/******** WALLET TRACKER ********/
+
+/* wallet tracker sidebar */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"]) {
+    width: 300px !important;
+}
+
+/* wallet tracker sidebar wallets */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"])
+.flex.flex-row.justify-start.items-center.flex-1.min-w-\[88px\] {
+    min-width: 105px !important;
+    max-width: 105px !important;
+    overflow: hidden;
+}
+
+/* wallet tracker sidebar coin names */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"])
+.flex.flex-row.flex-nowrap.justify-start.items-center.flex-1.min-w-\[100px\] {
+    min-width: 105px !important;
+    max-width: 105px !important;
+}
+
+/* wallet tracker sidebar time */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"])
+.flex.flex-row.flex-nowrap.justify-start.items-center.flex-1.min-w-\[100px\] > span > span,
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"])
+.flex.flex-row.flex-nowrap.justify-start.items-center.flex-1.min-w-\[100px\] > span {
+    display: none
+}
+
+/* wallet tracker sidebar coin links */
+[data-live-trades-content="true"] div[style*="position: absolute"] {
+    a.group\/token {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 115%;
+      margin-right: -55px;
+      margin-top: -11px;
+      margin-bottom: -11px;
+    }
+
+    .flex.flex-row.flex-nowrap.justify-start.items-center.flex-1:has(a.group\/token) > span > span {
+        z-index: -1;
+        margin-left: 20px;
+    }
+}
+
+/* wallet tracker quick buy button */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has([data-live-trades-content="true"]) .absolute.right-2.z-10 {
+    display: none;
+}
+
+/******** QUICK BUY ********/
+
+.rem-quick-buy-container {
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* quick buy buttons */
+.rem-quick-buy-buttons button.rem-btn {
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    border-width: 1px;
+    flex: 1 1 0%;
+    height: 38px;
+    cursor: pointer;
+}
+
+#rem-keys-disabled .rem-quick-buy-buttons button.rem-btn {
+  transition: background 0.1s ease;
+  color: rgb(var(--color-increase-100) / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: rgb(var(--color-increase-100) / .5);
+  background: rgb(var(--color-increase-100) / .045) !important;
+}
+
+#rem-keys-disabled .rem-quick-buy-buttons button.rem-btn:hover {
+    background: rgb(var(--color-increase-100) / .25) !important;
+}
+
+/* quick sell buttons */
+.rem-quick-sell-buttons button.rem-btn {
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    border-width: 1px;
+    flex: 1 1 0%;
+    height: 38px;
+    cursor: pointer;
+}
+
+#rem-keys-disabled .rem-quick-sell-buttons button.rem-btn {
+  transition: background 0.1s ease;
+  color: rgb(var(--color-decrease-100) / 1);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: rgb(var(--color-decrease-100) / .5);
+  background: rgb(var(--color-decrease-100) / .045) !important;
+}
+
+#rem-keys-disabled .rem-quick-sell-buttons button.rem-btn:hover {
+    background: rgb(var(--color-decrease-100) / .25) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************/
+/**************** REMASTERED ***************/
+/*******************************************/
+
+button.rounded-full {
+    border-radius: 8px !important;
+}
+
+.group button.group\/quickBuyButton {
+  border-radius: 6px !important;
+}
+
+.toggle-keyboard-shortcuts button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* COIN PAGE SIDEBAR */
+/* scroll fix */
+.h-\[calc\(100vh\+360px\)\].flex.flex-col.w-\[320px\].max-w-\[320px\].min-w-\[320px\].overflow-hidden.\[\&\:\:-webkit-scrollbar\]\:hidden.\[-ms-overflow-style\:none\].\[scrollbar-width\:none\] {
+    overflow-y: auto !important;
+    height: auto !important;
+}
+
+.h-\[calc\(100vh\+360px\)\].flex.flex-col.w-\[320px\].max-w-\[320px\].min-w-\[320px\].overflow-hidden.\[\&\:\:-webkit-scrollbar\]\:hidden.\[-ms-overflow-style\:none\].\[scrollbar-width\:none\] > div.flex.flex-col.flex-1.gap-\[4px\].overflow-hidden.justify-start {
+    overflow: visible !important;
+    display: flex !important;
+}
+
+.h-\[calc\(100vh\+360px\)\].flex.flex-col.w-\[320px\].max-w-\[320px\].min-w-\[320px\].overflow-hidden.\[\&\:\:-webkit-scrollbar\]\:hidden.\[-ms-overflow-style\:none\].\[scrollbar-width\:none\] {
+  will-change: scroll-position;
+  overscroll-behavior: contain; /* Prevents scroll from getting trapped */
+  scroll-behavior: smooth;
+  height: fit-content !important;
+}
+
+/* token info gaps */
+.h-\[calc\(100vh\+360px\)\].flex.flex-col.w-\[320px\].max-w-\[320px\].min-w-\[320px\] >
+.flex.flex-col.border-primaryStroke .flex.flex-col.flex-1 {
+  gap: 4px;
+}
+
+/**************** PUMP IMAGE ***************/
+
+.pump-image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.pump-image-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-pump-content {
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(0.75);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pump-image-modal.active .modal-pump-content {
+  transform: scale(1.05);
+}
+
+.modal-pump-image {
+  max-height: 30vw;
+  min-height: 23vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#rem-pump-image {
+    filter: saturate(0.75);
+    transition: filter 0.25s ease;
+}
+
+#rem-pump-image:hover {
+    filter: saturate(1);
+}
+
+.rem-no-desc {
+  opacity:0.5;
+}
+
+.rem-img-desc-cont img.rem-left {
+  float: left;
+  width: 120px;
+  min-width: 95px;
+  max-width: 33%;
+  margin: 0px 14px 0px 0;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#rem-name span {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px !important;
+    color: rgb(var(--color-text-200) / var(--tw-text-opacity, 1));
+}
+
+.rem-img-desc-cont .rem-desc-flow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rem-img-desc-cont .rem-text {
+  line-height: 1.4 !important;
+  font-size: 11px;
+  color: rgb(var(--color-text-300) / var(--tw-text-opacity, 1));
+  display: block;
+}
+
+#rem-ticker {
+    color: rgb(var(--color-text-100) / var(--tw-text-opacity, 1));
+}
+
+.rem-desc-flow { margin-top: 4px; }
+
+
+/*************** INSTANT TRADE **************/
+
+/* instant trade size */
+#instant-trade.bg-backgroundTertiary {
+    min-height: 310px !important;
+}
+
+/* instant trade */
+#instant-trade .bg-backgroundTertiary.cursor-move {
+  height: 40px;
+  button {
+    padding: 3.75px !important;
+    span, i {
+      font-size: 12.8px;
+    }
+  }
+}
+
+/* buy/sell headers */
+#instant-trade .buy-click-container > div.flex.flex-col:nth-child(1) .flex.items-center.justify-between span,
+#instant-trade .buy-click-container > .flex.flex-col.w-full > div:nth-child(2) .flex.items-center.justify-between span {
+  font-size: 12.75px;
+}
+
+/* instant trade buy & sell buttons */
+#instant-trade .cursor-pointer.border-increase\/50.text-increase.touch-callout-none,
+#instant-trade .cursor-pointer.border.border-decrease\/50.text-decrease.touch-callout-none {
+    height: 36px;
+    border-radius: 8px;
+}
+
+/* slippage, fees text */
+#instant-trade .buy-click-container > div > .flex.flex-row.justify-between.items-center span,
+#instant-trade .buy-click-container > .flex.flex-row.justify-between.items-center span {
+    font-size: 11px;
+}
+
+/* PnL font size */
+#instant-trade {
+  border-radius: 6px;
+  .border-t .text-\[12px\] {
+    scale: 1.06;
+  }
+}
+
+/**************** PRICE CHARTS ***************/
+
+/* quick buy buttons */
+.flex.flex-1.bg-backgroundSecondary:nth-child(2) .flex.flex-1.w-full div[style*="position: absolute"]
+.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton),
+.flex.flex-1.bg-backgroundSecondary:nth-child(3) .flex.flex-1.w-full div[style*="position: absolute"]
+.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton) {
+  display: none !important;
+}
+
+.flex.flex-1.bg-backgroundSecondary:nth-child(2) .flex.flex-1.w-full div[style*="position: absolute"]:hover
+.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton),
+.flex.flex-1.bg-backgroundSecondary:nth-child(3) .flex.flex-1.w-full div[style*="position: absolute"]:hover
+.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton) {
+  display: none !important;
+}
+
+/* pulse tracker quick buy button */
+.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has(.sticky.top-0.z-30.w-full) button.group\/quickBuyButton {
+    display: none;
+}
+
+.rem-price-chart {
+  background-color: none !important;
+  background: none !important;
+  position: absolute;
+  height: 50% !important;
+  width: 180px;
+  right: 1%;
+  bottom: 5%;
+  font-size: 6px;
+  justify-content: flex-end;
+  display: flex;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+  contain: layout paint size style;
+  will-change: transform;
+}
+
+/* migrating coins */
+.flex.flex-1.w-full div[style*="position: absolute"] .before\:bg-gradient-to-r .rem-price-chart {
+  opacity: 0.2;
+  z-index: -999;
+}
+
+.rem-price-chart .tv-lightweight-charts canvas[style*="z-index: 2"] {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+#tv-attr-logo {
+  display: none !important;
+}
+
+
+/************* MARKET CAP COLORS ************/
+
+div[class*="rem-mc"] {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+div[class*="rem-mc"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.rem-mc-1::after { background: linear-gradient(to right, #00000000 90%, rgba(82, 197, 255, 0.12)); }
+.rem-mc-2::after { background: linear-gradient(to right, #00000000 85%, rgba(82, 197, 255, 0.14)); }
+.rem-mc-3::after { background: linear-gradient(to right, #00000000 80%, rgba(82, 197, 255, 0.16)); }
+.rem-mc-4::after { background: linear-gradient(to right, #00000000 75%, rgba(82, 197, 255, 0.18)); }
+.rem-mc-5::after { background: linear-gradient(to right, #00000000 70%, rgba(82, 197, 255, 0.20)); }
+
+.rem-mc-6::after { background: linear-gradient(to right, #00000000 85%, rgba(220, 193, 60, 0.12)); }
+.rem-mc-7::after { background: linear-gradient(to right, #00000000 77%, rgba(220, 193, 60, 0.14)); }
+.rem-mc-8::after { background: linear-gradient(to right, #00000000 69%, rgba(220, 193, 60, 0.16)); }
+.rem-mc-9::after { background: linear-gradient(to right, #00000000 60%, rgba(220, 193, 60, 0.18)); }
+.rem-mc-10::after { background: linear-gradient(to right, #00000000 55%, rgba(220, 193, 60, 0.20)); }
+
+.rem-mc-11::after { background: linear-gradient(to right, #00000000 82%, rgba(47, 227, 172, 0.12)); }
+.rem-mc-12::after { background: linear-gradient(to right, #00000000 78%, rgba(47, 227, 172, 0.14)); }
+.rem-mc-13::after { background: linear-gradient(to right, #00000000 70%, rgba(47, 227, 172, 0.16)); }
+.rem-mc-14::after { background: linear-gradient(to right, #00000000 62%, rgba(47, 227, 172, 0.18)); }
+.rem-mc-15::after { background: linear-gradient(to right, #00000000 55%, rgba(47, 227, 172, 0.20)); }
+
+.rem-mc-16::after { background: linear-gradient(to right, #00000000 52%, rgba(47, 227, 172, 0.22)); }
+
+
+/* WALLET AGE */
+.rem-age-red {
+  color: rgb(var(--primary-red) / var(--tw-text-opacity, 1)) !important;
+}
+
+.rem-age-orange {
+  color: rgb(var(--primary-orange) / var(--tw-text-opacity, 1)) !important;
+}
+
+.rem-age-yellow {
+  color: rgb(var(--primary-yellow) / var(--tw-text-opacity, 1)) !important;
+}
+
+/* BALANCE GRADIENTS */
+.rem-balance-1,
+.rem-balance-2,
+.rem-balance-3,
+.rem-balance-4,
+.rem-balance-5 {
+  position: relative;
+}
+
+.rem-balance-2::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.15) 25%,
+    transparent calc(100% - 75%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-balance-3::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.20) 47%,
+    transparent calc(100% - 53%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-balance-4::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.25) 70%,
+    transparent calc(100% - 30%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-balance-5::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.30) 98%,
+    transparent calc(100% - 2%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+/* PERCENTAGE GRADIENTS  */
+.rem-percentage-1,
+.rem-percentage-2,
+.rem-percentage-3,
+.rem-percentage-4,
+.rem-percentage-5 {
+  position: relative;
+  overflow: visible !important;
+}
+
+.rem-percentage-1::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.15) 15%,
+    transparent calc(100% - 85%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-percentage-2::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.15) 25%,
+    transparent calc(100% - 75%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-percentage-3::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.20) 47%,
+    transparent calc(100% - 53%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-percentage-4::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.25) 70%,
+    transparent calc(100% - 30%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+.rem-percentage-5::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 4px,
+    rgba(82,197,255,0.30) 98%,
+    transparent calc(100% - 2%)
+  );
+  margin-top: 0px;
+  height: 100%;
+  inset: 0;
+}
+
+div[style*="position: absolute"]:has([alt="Developer"])
+.rem-percentage-1::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 20px,
+    rgba(255,255,100,0.25) 15%,
+    transparent calc(100% - 85%)
+  );
+  margin-top: -16px;
+  height: 48px;
+  inset: 0;
+}
+
+div[style*="position: absolute"]:has([alt="Developer"])
+.rem-percentage-2::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 20px,
+    rgba(255,255,100,0.25) 25%,
+    transparent calc(100% - 75%)
+  );
+  margin-top: -16px;
+  height: 48px;
+  inset: 0;
+}
+
+div[style*="position: absolute"]:has([alt="Developer"])
+.rem-percentage-3::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 20px,
+    rgba(255,255,100,0.25) 47%,
+    transparent calc(100% - 53%)
+  );
+  margin-top: -16px;
+  height: 48px;
+  inset: 0;
+}
+
+div[style*="position: absolute"]:has([alt="Developer"])
+.rem-percentage-4::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 20px,
+    rgba(255,255,100,0.25) 70%,
+    transparent calc(100% - 30%)
+  );
+  margin-top: -16px;
+  height: 48px;
+  inset: 0;
+}
+
+div[style*="position: absolute"]:has([alt="Developer"])
+.rem-percentage-5::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent 20px,
+    rgba(255,255,100,0.25) 98%,
+    transparent calc(100% - 2%)
+  );
+  margin-top: -16px;
+  height: 48px;
+  inset: 0;
+}
+
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-1::before,
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-2::before,
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-3::before,
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-4::before,
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-5::before,
+.bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-1::before,
+.bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-2::before,
+.bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-3::before,
+.bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-4::before,
+.bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) .rem-percentage-5::before {
+    background: none !important;
+}
+
+/* holders percentage number */
+.flex.flex-col.flex-1.justify-center.items-start.gap-2 > .flex.flex-row.items-center.gap-2 > .bg-secondaryStroke\/50.flex.flex-row.justify-start.items-center {
+    left: 56px;
+    position: absolute;
+}
+
+/* holders percentage progress bar */
+.flex.flex-col.flex-1.justify-center.items-start.gap-2 > .mb-1.bg-primaryStroke\/50.rounded-full.overflow-hidden {
+    display: none;
+}
+
+/* liquidity pool under holders */
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500) > .flex span, .bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) > .flex span {
+  color: rgb(59 130 246/var(--tw-text-opacity,1)) !important;
+  opacity: 0.95;
+}
+
+.bg-transparent:has(i.ri-water-flash-line.text-blue-500), .bg-primaryStroke\/20:has(i.ri-water-flash-line.text-blue-500) {
+  .rem-balance-1::before, .rem-balance-2::before, .rem-balance-3::before,
+  .rem-balance-4::before, .rem-balance-5::before {
+  background: none !important;
+  }  
+}
+
+/* holders pro trader icons */
+.bg-transparent [alt="Pro User"], .bg-primaryStroke\/20 [alt="Pro User"] {
+  filter: invert(10%) sepia(90%) saturate(350%);
+}
+
+
+/**************** TWITTER FEED ***************/
+
+.remastered-twitter-feed #iframe-twitter-feed {
+  height: 650px;
+  width: 462px !important;
+  margin: 0;    
+  margin-left: -7px;
+  margin-top: -50px;
+  margin-bottom: -24px;
+  overflow: hidden !important;
+  display: block;
+  zoom : 71.5%;
+  border: none;
+  pointer-events: auto;
+  clip-path: inset(0px 20px 0px 10px);
+}
+
+.remastered-twitter-feed {
+    width: 310px !important;
+    position: relative;
+    overflow: hidden !important;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.fade-mask-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.fade-mask-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0.85) 100%);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.u-d-none.u-d-block-lg.p-show__widget.u-p-0.js-buy-section#remastered-x-feed {
+    order: 3 !important;
+    margin-bottom: 8px !important;
+    
+}
+
+.u-d-none.u-d-block-lg.p-show__widget.u-p-0.js-buy-section#remastered-x-feed:has(.is-expanded) {
+    box-shadow: rgba(205, 205, 205, 0.15) 0px 0px 3px 0px;
+}
+
+#remastered-x-feed #remastered-x-feed-title {
+    padding-bottom: 0px;
+    transition: padding 0.3s ease;
+}
+
+#remastered-x-feed:has(.is-expanded) #remastered-x-feed-title {
+    padding-bottom: 10px;
+    transition: padding 0.5s ease;
+}
+
+#remastered-x-feed-title a {
+    scale: 1.4;
+    color: #8E9DFF;
+    transition: color 0.3s ease;
+}
+
+#remastered-x-feed-title a:hover {
+    
+    color: rgba(255, 255, 255, 0.95);
+    transition: color 0.3s ease;
+}
+
+span.rem-x-title {
+    padding-left: 16px;
+    margin-top: 1px;
+}
+
+#remastered-x-feed .p-show__collapsible__title.js-show__collapsible.u-d-block.js-data-security {
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+#remastered-x-feed .p-show__collapsible__title.js-show__collapsible.u-d-block.js-data-security.is-expanded {
+    /*background: #1e1e1e;
+    transition: background 0.5s ease;*/
+    border-radius: 6px 6px 0px 0px;
+}
+
+#remastered-x-feed .p-show__collapsible__arr {
+    border-left: none;
+}
