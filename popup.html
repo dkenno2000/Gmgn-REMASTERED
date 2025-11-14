@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gmgn REMASTERED — Settings</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="header" aria-hidden>
+      <div class="logo"><img src="img/remastered-logo.png" alt="Axiom REM logo"></div>
+      <div class="title">
+        <div class="name">Gmgn REMASTERED</div>
+        <div class="sub-container" style="display: flex;">
+          <div class="sub" style="font-size: 10px;">made by d.kenno2000@gmail.com</div>
+          <div class="sub" style="margin-left: 70px; font-size: 10px;">v1.1 [beta]</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="section-marketcap">
+      <h3>Market cap colorization</h3>
+      <div class="row">
+        <div class="text">
+          <div class="desc">Colorize coins based on market cap</div>
+        </div>
+        <div class="control">
+          <button id="toggle-marketcap" class="toggle" role="switch" aria-checked="true" tabindex="0">
+            <span class="knob"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section-charts">
+      <h3>Price charts</h3>
+      <div class="row column">
+        <div class="text">
+          <div class="desc">Show price charts on coin cards</div>
+        </div>
+
+        <div class="radio-group" role="radiogroup" aria-label="Chart scope">
+          <button id="radio-charts-all" data-value="all" class="radio">Show charts on all coins</button>
+          <button id="radio-charts-migrated" data-value="migrated" class="radio">Only migrated</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="popup-footer">
+      <div class="muted-div" style="font-size: 10px;"><i>* Changes require page reload.</i></div>
+      <span class="muted" style="font-size: 10px; display: block;">If this extension helped you catch some runners, feel free to send a small donation to: </span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
