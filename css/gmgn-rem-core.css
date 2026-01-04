@@ -140,6 +140,7 @@ button.absolute.z-50.opacity-0.group-hover\:opacity-100:has(.icon-chefhat-off) {
 /******** QUICK BUY ********/
 
 .rem-quick-buy-container {
+    display: inherit;
     border-radius: 12px;
     border: 1px solid transparent;
     padding-bottom: 5px;
@@ -855,4 +856,5 @@ span.rem-x-title {
 
 #remastered-x-feed .p-show__collapsible__arr {
     border-left: none;
+
 }
