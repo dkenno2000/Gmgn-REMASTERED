@@ -35,8 +35,16 @@ main.w-full > .w-full .g-table-body > div > div[data-index] .\!text-\[12px\] {
 }
 
 /* quick buy button */
-main.w-full > .w-full .g-table-body > div > div[data-index] .group\/btn {
-    display: none;
+div[style*="position: absolute"]:has(.rem-price-chart) .group\/btn {
+    display: none !important;
+}
+
+div[style*="position: absolute"]:has(.rem-price-chart):hover .group\/btn {
+  display: block !important;
+}
+
+div[style*="position: absolute"]:has(.rem-price-chart):hover .rem-price-chart {
+    opacity: 0.015;
 }
 
 .rem-price-chart {
@@ -140,7 +148,6 @@ button.absolute.z-50.opacity-0.group-hover\:opacity-100:has(.icon-chefhat-off) {
 /******** QUICK BUY ********/
 
 .rem-quick-buy-container {
-    display: inherit;
     border-radius: 12px;
     border: 1px solid transparent;
     padding-bottom: 5px;
@@ -393,26 +400,6 @@ button.rounded-full {
 
 /**************** PRICE CHARTS ***************/
 
-/* quick buy buttons */
-.flex.flex-1.bg-backgroundSecondary:nth-child(2) .flex.flex-1.w-full div[style*="position: absolute"]
-.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton),
-.flex.flex-1.bg-backgroundSecondary:nth-child(3) .flex.flex-1.w-full div[style*="position: absolute"]
-.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton) {
-  display: none !important;
-}
-
-.flex.flex-1.bg-backgroundSecondary:nth-child(2) .flex.flex-1.w-full div[style*="position: absolute"]:hover
-.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton),
-.flex.flex-1.bg-backgroundSecondary:nth-child(3) .flex.flex-1.w-full div[style*="position: absolute"]:hover
-.absolute.z-10:has(button.bg-primaryBlue.group\/quickBuyButton) {
-  display: none !important;
-}
-
-/* pulse tracker quick buy button */
-.flex.flex-col.overflow-hidden.bg-backgroundSecondary:has(.sticky.top-0.z-30.w-full) button.group\/quickBuyButton {
-    display: none;
-}
-
 .rem-price-chart {
   background-color: none !important;
   background: none !important;
@@ -427,16 +414,10 @@ button.rounded-full {
   z-index: 999;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 0.45s ease;
+  transition: opacity 0.2s ease;
   pointer-events: none;
   contain: layout paint size style;
   will-change: transform;
-}
-
-/* migrating coins */
-.flex.flex-1.w-full div[style*="position: absolute"] .before\:bg-gradient-to-r .rem-price-chart {
-  opacity: 0.2;
-  z-index: -999;
 }
 
 .rem-price-chart .tv-lightweight-charts canvas[style*="z-index: 2"] {
@@ -856,5 +837,4 @@ span.rem-x-title {
 
 #remastered-x-feed .p-show__collapsible__arr {
     border-left: none;
-
 }
